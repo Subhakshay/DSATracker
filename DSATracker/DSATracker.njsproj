@@ -29,16 +29,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".env" />
+    <Content Include="client\package.json" />
+    <Content Include="client\public\index.html" />
+    <Content Include="client\public\logo192.png" />
+    <Content Include="client\public\logo512.png" />
+    <Content Include="client\public\manifest.json" />
+    <Content Include="client\public\robots.txt" />
+    <Content Include="client\src\App.css" />
+    <Content Include="client\src\App.js" />
+    <Content Include="client\src\App.test.js" />
+    <Content Include="client\src\index.css" />
+    <Content Include="client\src\index.js" />
+    <Content Include="client\src\logo.svg" />
+    <Content Include="client\src\reportWebVitals.js" />
+    <Content Include="client\src\setupTests.js" />
     <Content Include="config\db.js" />
     <Content Include="controllers\authcontroller.js" />
     <Content Include="controllers\codeforcesController.js" />
     <Content Include="features\Dashboard.js" />
     <Content Include="features\Login.js" />
     <Content Include="features\userSlice.js" />
-    <Content Include="public\bitslogo.webp" />
-    <Content Include="public\favicon.ico" />
-    <Content Include="public\index.html" />
-    <Content Include="public\logo192.png" />
+    <Content Include="client\public\bitslogo.webp" />
+    <Content Include="client\public\favicon.ico" />
     <Content Include="routes\auth.js" />
     <Content Include="routes\codeforces.js" />
     <Content Include="routes\team.js" />
@@ -47,14 +59,16 @@
     <Content Include="README.md" />
     <Content Include="models\Team.js" />
     <Content Include="controllers\teamController.js" />
-    <Content Include="models\user.js" />
+    <Content Include="models\User.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="client\" />
+    <Folder Include="client\public\" />
+    <Folder Include="client\src\" />
     <Folder Include="models\" />
     <Folder Include="controllers\" />
     <Folder Include="features\" />
     <Folder Include="config\" />
-    <Folder Include="public\" />
     <Folder Include="routes\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />

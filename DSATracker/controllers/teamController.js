@@ -1,8 +1,8 @@
-// teamController.js
-const Team = require('../models/Team');
-const User = require('../models/User');
+// Importing Team and User models using ES Module syntax
+import Team from '../models/Team.js';
 
-exports.createTeam = async (req, res) => {
+// Exporting createTeam function
+export const createTeam = async (req, res) => {
     const { name } = req.body;
 
     try {
@@ -13,7 +13,8 @@ exports.createTeam = async (req, res) => {
     }
 };
 
-exports.joinTeam = async (req, res) => {
+// Exporting joinTeam function
+export const joinTeam = async (req, res) => {
     const { teamId } = req.body;
 
     try {
@@ -28,7 +29,8 @@ exports.joinTeam = async (req, res) => {
     }
 };
 
-exports.trackProblem = async (req, res) => {
+// Exporting trackProblem function
+export const trackProblem = async (req, res) => {
     const { teamId, problemId } = req.body;
 
     try {

@@ -41,10 +41,6 @@ app.get('/', (req, res) => {
     res.send('API is running...');
 });
 
-// 7. Error Handling Middleware
-app.use(notFound);
-app.use(errorHandler);
-
 // 8. Start the Server
 const PORT = process.env.PORT || 5000;
 
