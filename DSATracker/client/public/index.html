@@ -8,6 +8,7 @@
     <meta name="description"
           content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -23,19 +24,27 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>ACC</title>
-</head>
-<body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <h1>ACAD BLOGS</h1>
-    <img src="bitslogo.webp" alt="BITS HYD Acad Block" style="display: block; margin: auto;" width=" 300" height="300" />
-    <div style="text-align:center">
-        <h4>Hello everyone welcome to BITS PILANI HYD Campus.</h4>
-        <h4>
-            This is very exciting to inform you that we are part of Academic Counselling Cell(ACC).
-            ACC is dedicated to enhancing your campus experience, guiding you through challenges, and ensuring your success throughout this academic journey. We do this through a variety of engaging events and support initiatives.
-        </h4>
+    <style >
+        .flex-container {
+            display: flex;
+            align-items: center; /* Aligns items vertically centered */
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
 
+        .logo {
+            margin-right: 10px; /* Optional: Adds space between the image and text */
+        }
+    </style>
+</head>
+<body style="text-align:center;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="flex-container">
+        <img src="bitslogo.webp" alt="BITS HYD Acad Block" class="logo" width="80" height="80" />
+        <h1 className="text-center my-4">ACAD BLOGS</h1>
     </div>
+    <hr>
     <div id="root"></div>
 
 </body>

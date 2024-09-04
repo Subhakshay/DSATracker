@@ -32,7 +32,6 @@
     <Content Include="client\package.json" />
     <Content Include="client\public\index.html" />
     <Content Include="client\public\logo192.png" />
-    <Content Include="client\public\logo512.png" />
     <Content Include="client\public\manifest.json" />
     <Content Include="client\public\robots.txt" />
     <Content Include="client\src\App.css" />
